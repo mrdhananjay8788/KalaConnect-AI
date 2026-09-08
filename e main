@@ -1,0 +1,9 @@
+*[33m-[m[33m.[m   [33m12e2862[m[33m ([m[1;35mrefs/stash[m[33m)[m On main: my local changes before reviewing updates
+[31m|[m[32m\[m [33m\[m  
+[31m|[m [32m|[m * [33mcf7854c[m untracked files on main: 994603c Fix nested repository
+[31m|[m * [33m9d0bb41[m index on main: 994603c Fix nested repository
+[31m|[m[31m/[m  
+* [33m994603c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix nested repository
+* [33m36a0e96[m Your commit message
+* [33m6685d30[m Initial project folder structure
+* [33m330b138[m[33m ([m[1;31morigin/updates[m[33m, [m[1;32mupdates[m[33m)[m Initial commit on new branch
