@@ -1,0 +1,15 @@
+def get_requirement_extractor() -> BaseRequirementExtractionProvider:
+    if settings.AI_MODE == "mock":
+        return MockRequirementExtractionProvider()
+    return MockRequirementExtractionProvider()
+
+def get_delivery_feasibility() -> BaseDeliveryFeasibilityProvider:
+    if settings.AI_MODE == "mock":
+        return MockDeliveryFeasibilityProvider()
+    return MockDeliveryFeasibilityProvider()
+
+def get_matching_engine(
+    extractor: Annotated[BaseRequirementExtractionProvider, Depends(get_requirement_extractor)],
+    feasibility: Annotated[BaseDeliveryFeasibilityProvider, Depends(get_delivery_feasibility)]
+) -> MatchingEngine:
+    return MatchingEngine(extractor, feasibility)

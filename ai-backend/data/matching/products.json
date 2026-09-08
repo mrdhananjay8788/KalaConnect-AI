@@ -1,0 +1,34 @@
+[
+    {
+        "product_id": "PRD-201",
+        "artisan_id": "ART-101",
+        "product_name": "Handcrafted Bamboo Basket with Lid",
+        "category": "basket",
+        "price": 620,
+        "keywords": ["bamboo", "basket", "handmade", "corporate gifting"]
+    },
+    {
+        "product_id": "PRD-202",
+        "artisan_id": "ART-102",
+        "product_name": "Simple Bamboo Basket",
+        "category": "basket",
+        "price": 450,
+        "keywords": ["bamboo", "basket", "storage"]
+    },
+    {
+        "product_id": "PRD-203",
+        "artisan_id": "ART-103",
+        "product_name": "Premium Paithani Saree",
+        "category": "textile",
+        "price": 12000,
+        "keywords": ["paithani", "saree", "silk", "handloom"]
+    },
+    {
+        "product_id": "PRD-204",
+        "artisan_id": "ART-104",
+        "product_name": "Eco Bamboo Storage Basket",
+        "category": "basket",
+        "price": 480,
+        "keywords": ["bamboo", "basket", "handmade", "eco-friendly"]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "product_id": "PRD-001",
+        "product_name": "Handcrafted Bamboo Basket",
+        "category": "basket",
+        "craft_type": "handmade",
+        "materials": ["bamboo"],
+        "region": "Maharashtra",
+        "price": 450.0,
+        "availability": 150,
+        "keywords": ["bamboo", "basket", "storage", "eco-friendly", "corporate gifting"]
+    },
+    {
+        "product_id": "PRD-002",
+        "product_name": "Premium Paithani Saree",
+        "category": "textile",
+        "craft_type": "handloom",
+        "materials": ["silk", "gold thread"],
+        "region": "Maharashtra",
+        "price": 12000.0,
+        "availability": 5,
+        "keywords": ["paithani", "saree", "wedding", "traditional"]
+    },
+    {
+        "product_id": "PRD-003",
+        "product_name": "Terracotta Clay Pot",
+        "category": "pottery",
+        "craft_type": "handmade",
+        "materials": ["terracotta", "clay"],
+        "region": "Rajasthan",
+        "price": 250.0,
+        "availability": 300,
+        "keywords": ["pot", "clay", "cooking", "traditional", "kitchen"]
+    },
+    {
+        "product_id": "PRD-004",
+        "product_name": "Warli Painting Canvas",
+        "category": "art",
+        "craft_type": "painting",
+        "materials": ["canvas", "natural colors"],
+        "region": "Maharashtra",
+        "price": 1500.0,
+        "availability": 20,
+        "keywords": ["warli", "painting", "wall art", "decor", "tribal"]
+    },
+    {
+        "product_id": "PRD-005",
+        "product_name": "Handwoven Cotton Bag",
+        "category": "bag",
+        "craft_type": "handwoven",
+        "materials": ["cotton"],
+        "region": "Gujarat",
+        "price": 300.0,
+        "availability": 500,
+        "keywords": ["bag", "tote", "cotton", "shopping", "eco-friendly", "bulk"]
+    },
+    {
+        "product_id": "PRD-006",
+        "product_name": "Bamboo Storage Box",
+        "category": "box",
+        "craft_type": "handmade",
+        "materials": ["bamboo", "wood"],
+        "region": "Assam",
+        "price": 600.0,
+        "availability": 80,
+        "keywords": ["bamboo", "box", "storage", "organizer", "corporate gifting"]
+    }
+]

@@ -1,0 +1,138 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  ARTISAN
+  BUYER
+  ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+}
+
+enum ProductStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+  INACTIVE
+}
+
+model User {
+  id       String     @id @default(cuid())
+  fullName String
+  email    String     @unique
+  phone    String?    @unique
+  password String
+  role     UserRole   @default(BUYER)
+  status   UserStatus @default(ACTIVE)
+
+  artisan Artisan?
+  buyer   Buyer?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Artisan {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  businessName    String?
+  bio             String?
+  craftType       String?
+  experienceYears Int?
+  location        String?
+  state           String?
+  district        String?
+  pincode         String?
+  languages       String[]
+  verified        Boolean  @default(false)
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Buyer {
+  id               String  @id @default(cuid())
+  userId           String  @unique
+  organizationName String?
+  buyerType        String?
+  location         String?
+  state            String?
+  district         String?
+  pincode          String?
+  website          String?
+  verified         Boolean @default(false)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  imageUrl    String?
+  active      Boolean   @default(true)
+  products    Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Product {
+  id         String @id @default(cuid())
+  artisanId  String
+  categoryId String
+
+  name          String
+  slug          String        @unique
+  description   String?
+  material      String?
+  price         Decimal       @db.Decimal(10, 2)
+  currency      String        @default("INR")
+  stockQuantity Int           @default(0)
+  status        ProductStatus @default(DRAFT)
+  featured      Boolean       @default(false)
+
+  artisan  Artisan  @relation(fields: [artisanId], references: [id], onDelete: Cascade)
+  category Category @relation(fields: [categoryId], references: [id])
+
+  images ProductImage[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([artisanId])
+  @@index([categoryId])
+  @@index([status])
+}
+
+model ProductImage {
+  id        String  @id @default(cuid())
+  productId String
+  url       String
+  altText   String?
+  sortOrder Int     @default(0)
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@index([productId])
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "product_id": "DEMO-001",
+        "category": "Handicraft",
+        "subcategory": "Basket",
+        "craft_type": "Bamboo Weaving",
+        "material": "Bamboo",
+        "region": "Maharashtra",
+        "quality_score": 85.0,
+        "price": 2600.0
+    },
+    {
+        "product_id": "DEMO-002",
+        "category": "Handicraft",
+        "subcategory": "Basket",
+        "craft_type": "Bamboo Weaving",
+        "material": "Bamboo",
+        "region": "Maharashtra",
+        "quality_score": 90.0,
+        "price": 2800.0
+    },
+    {
+        "product_id": "DEMO-003",
+        "category": "Handicraft",
+        "subcategory": "Basket",
+        "craft_type": "Bamboo Weaving",
+        "material": "Bamboo",
+        "region": "Assam",
+        "quality_score": 88.0,
+        "price": 2400.0
+    },
+    {
+        "product_id": "DEMO-004",
+        "category": "Handicraft",
+        "subcategory": "Basket",
+        "craft_type": "Bamboo Weaving",
+        "material": "Cane",
+        "region": "Maharashtra",
+        "quality_score": 82.0,
+        "price": 3100.0
+    },
+    {
+        "product_id": "DEMO-005",
+        "category": "Handicraft",
+        "subcategory": "Basket",
+        "craft_type": "Bamboo Weaving",
+        "material": "Bamboo",
+        "region": "Maharashtra",
+        "quality_score": 95.0,
+        "price": 3400.0
+    },
+    {
+        "product_id": "DEMO-006",
+        "category": "Textile",
+        "subcategory": "Saree",
+        "craft_type": "Handloom",
+        "material": "Cotton",
+        "region": "Maharashtra",
+        "quality_score": 88.0,
+        "price": 4500.0
+    },
+    {
+        "product_id": "DEMO-007",
+        "category": "Textile",
+        "subcategory": "Saree",
+        "craft_type": "Paithani",
+        "material": "Silk",
+        "region": "Maharashtra",
+        "quality_score": 98.0,
+        "price": 12000.0
+    }
+]
